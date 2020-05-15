@@ -20,7 +20,7 @@ signal2Frequency     = 7;
 # Time points
 time = np.arange(beginTime, endTime, samplingInterval);
 # Create two sine waves
-amplitude1 = np.sin(2*np.pi*signal1Frequency*time)
+amplitude1 = 4 * np.sin(2*np.pi*signal1Frequency*time)
 amplitude2 = np.sin(2*np.pi*signal2Frequency*time)
 
 # Create subplot
