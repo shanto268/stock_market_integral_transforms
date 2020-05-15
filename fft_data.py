@@ -15,7 +15,7 @@ prices = df_close.to_numpy()
 amplitude = prices
 days = np.array([i for i in range(amplitude.size)])
 
-def showPlot()
+def showPlot():
     plt.figure(figsize=(10,6))
     plt.plot(days, amplitude)
     plt.xlabel('Days since stock IPO\'d')
@@ -33,6 +33,8 @@ tpCount     = len(amplitude)
 values      = np.arange(int(tpCount/2))
 timePeriod  = tpCount/samplingFrequency
 frequencies = values/timePeriod
+
+showPlot()
 
 plt.plot(frequencies, abs(fourierTransform))
 plt.title('Fourier transform depicting the frequency components')
