@@ -1,0 +1,2 @@
+data: https://lionbridge.ai/datasets/top-10-stock-market-datasets-for-machine-learning/
+machine learning: https://towardsdatascience.com/stock-market-forecasting-using-time-series-c3d21f2dd37f
