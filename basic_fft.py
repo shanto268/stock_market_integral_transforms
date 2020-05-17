@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plotter
-
+import random
  
 
 # How many time points are needed i,e., Sampling Frequency
@@ -15,13 +15,13 @@ beginTime           = 0;
 # End time period of the signals
 endTime             = 10; 
 # Frequency of the signals
-signal1Frequency     = 4;
-signal2Frequency     = 7;
+signal1Frequency  = 1 
+signal2Frequency  = 3
 # Time points
 time = np.arange(beginTime, endTime, samplingInterval);
 # Create two sine waves
 amplitude1 = 4 * np.sin(2*np.pi*signal1Frequency*time)
-amplitude2 = np.sin(2*np.pi*signal2Frequency*time)
+amplitude2 = np.sin(2*np.pi*signal2Frequency*time + np.pi)
 
 # Create subplot
 figure, axis = plotter.subplots(4, 1)
